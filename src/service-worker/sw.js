@@ -16,11 +16,8 @@ self.addEventListener('push', function (e) {
 
   if (e.data) {
       let message = e.data.text();
-      console.log(message);
-      e.waitUntil(self.registration.showNotification(message.title, {
-          body: message.body,
-          icon: message.icon,
-          actions: message.actions
+      e.waitUntil(self.registration.showNotification('', {
+          body: message,
       }));
   }
 });

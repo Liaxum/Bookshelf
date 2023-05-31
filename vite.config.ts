@@ -20,9 +20,6 @@ export default defineConfig({
       
       base: '/',
 
-      // Register Service Worker
-//      injectRegister: 'script',
-
       // Service Worker
       srcDir: 'src/service-worker',
       filename: 'sw.js',
