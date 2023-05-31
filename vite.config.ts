@@ -17,9 +17,16 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2}'],
         cleanupOutdatedCaches: false
       },
-
+      
       base: '/',
+
+      // Register Service Worker
+//      injectRegister: 'script',
+
+      // Service Worker
       srcDir: 'src/service-worker',
+      filename: 'sw.js',
+      strategies: 'injectManifest',
       manifest: {
         name: 'Bookshelf',
         short_name: 'BK',
