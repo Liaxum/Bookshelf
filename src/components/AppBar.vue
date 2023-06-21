@@ -2,36 +2,49 @@
 </script>
 
 <template>
-  <header>
-    <nav class="wrapper">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </nav>
-  </header>
+  <v-app-bar>
+    <v-btn variant="text" to="/">
+      <v-icon>mdi-home</v-icon>
+    </v-btn>
+    <v-spacer />
+    <v-btn variant="text" to="/collection">
+      <v-icon>mdi-book</v-icon>
+      <v-tooltip activator="parent" location="bottom" open-delay="750">
+        Book Collection
+      </v-tooltip>
+    </v-btn>
+    <v-btn variant="text" to="/shelf">
+      <v-icon>mdi-bookshelf</v-icon>
+      <v-tooltip activator="parent" location="bottom" open-delay="750">
+        Bookshelf Collection
+      </v-tooltip>
+    </v-btn>
+    <v-btn variant="text" to="/friends">
+      <v-icon>mdi-account-group</v-icon>
+      <v-tooltip activator="parent" location="bottom" open-delay="750">
+        Friends Interactions
+      </v-tooltip>
+    </v-btn>
+    <v-spacer />
+    <v-btn variant="text" to="/search">
+      <v-icon>mdi-magnify</v-icon>
+      <v-tooltip activator="parent" location="bottom" open-delay="750">
+        Search Books/Shelf/Friend
+      </v-tooltip>
+    </v-btn>
+    <v-btn variant="text" to="/account">
+      <v-icon>mdi-account</v-icon>
+      <v-tooltip activator="parent" location="bottom" open-delay="750">
+        My Account
+      </v-tooltip>
+    </v-btn>
+  </v-app-bar>
 </template>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: ‘Josefin Sans’, sans-serif;
-}
-
-body {
-  background: #0868cf;
-}
-
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 450px;
-  height: 80px;
-  border-radius: 50px;
+<style scoped>
+.v-app-bar {
+  position: initial !important;
+  border-radius: 20px;
+  width: 85% !important;
 }
 </style>

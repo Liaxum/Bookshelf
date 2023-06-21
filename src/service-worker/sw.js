@@ -2,6 +2,7 @@ import { precacheAndRoute, cleanupOutdatedCaches } from 'workbox-precaching';
 
 // Register precache routes (static cache)
 precacheAndRoute(self.__WB_MANIFEST || []);
+cleanupOutdatedCaches();
 
 // Receive push notifications
 self.addEventListener('push', function (e) {

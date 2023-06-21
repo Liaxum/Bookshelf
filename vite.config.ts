@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
     VitePWA({
+      
       registerType: 'autoUpdate',
       devOptions: {
         enabled: true,
@@ -17,7 +18,6 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2}'],
         cleanupOutdatedCaches: false
       },
-      
       base: '/',
 
       // Service Worker
@@ -25,13 +25,13 @@ export default defineConfig({
       filename: 'sw.js',
       strategies: 'injectManifest',
       manifest: {
+        start_url: './',
         name: 'Bookshelf',
         short_name: 'BK',
         description: 'My Awesome Bookshelf App',
         theme_color: '#ffffff',
         display: 'minimal-ui',
         publicPath: '/public',
-        start_url: '/',
         icons: [
           {
             src: 'icon.png',

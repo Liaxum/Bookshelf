@@ -14,9 +14,12 @@
   "dependencies": {
     "@capacitor/android": "^5.0.5",
     "@capacitor/core": "^5.0.5",
+    "@mdi/font": "^7.2.96",
+    "mdi": "^2.2.43",
     "pinia": "^2.0.36",
     "vue": "^3.3.2",
-    "vue-router": "^4.2.0"
+    "vue-router": "^4.2.0",
+    "vuetify": "^3.3.5"
   },
   "devDependencies": {
     "@capacitor/cli": "^5.0.5",

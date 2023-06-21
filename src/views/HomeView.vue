@@ -1,7 +1,7 @@
 <script setup lang="ts">
+  
 </script>
 
 <template>
-  <main>
-  </main>
+  <h1>EGGS !</h1>
 </template>
