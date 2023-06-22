@@ -2,18 +2,18 @@
 </script>
 
 <template>
-  <v-app-bar>
+  <v-bottom-navigation>
     <v-btn variant="text" to="/">
       <v-icon>mdi-home</v-icon>
     </v-btn>
     <v-spacer />
-    <v-btn variant="text" to="/collection">
+    <v-btn variant="text" to="/book">
       <v-icon>mdi-book</v-icon>
       <v-tooltip activator="parent" location="bottom" open-delay="750">
         Book Collection
       </v-tooltip>
     </v-btn>
-    <v-btn variant="text" to="/shelf">
+    <v-btn variant="text" to="/bookshelf">
       <v-icon>mdi-bookshelf</v-icon>
       <v-tooltip activator="parent" location="bottom" open-delay="750">
         Bookshelf Collection
@@ -38,11 +38,12 @@
         My Account
       </v-tooltip>
     </v-btn>
-  </v-app-bar>
+  </v-bottom-navigation>
 </template>
 
 <style scoped>
-.v-app-bar {
+.v-bottom-navigation {
+  margin-top: 1em;
   position: initial !important;
   border-radius: 20px;
   width: 85% !important;

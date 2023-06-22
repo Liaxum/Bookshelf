@@ -15,6 +15,7 @@
     "@capacitor/android": "^5.0.5",
     "@capacitor/core": "^5.0.5",
     "@mdi/font": "^7.2.96",
+    "idb": "^7.1.1",
     "mdi": "^2.2.43",
     "pinia": "^2.0.36",
     "vue": "^3.3.2",
